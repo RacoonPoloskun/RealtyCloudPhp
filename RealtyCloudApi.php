@@ -140,7 +140,7 @@ class RealtyCloudApi
                 'object_key' => $order['object_key'],
             ];
 
-            if ($order['coupon_id']) {
+            if (isset($order['coupon_id'])) {
                 $arOrder['coupon_id'] = $order['coupon_id'];
             }
 
